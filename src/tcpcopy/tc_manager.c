@@ -9,6 +9,7 @@ check_resource_usage(tc_event_timer_t *evt)
     int           ret, who;
     struct rusage usage;
 
+
     who = RUSAGE_SELF;
 
     ret = getrusage(who, &usage);
